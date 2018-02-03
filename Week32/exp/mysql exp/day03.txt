@@ -1,0 +1,43 @@
+﻿字符集与校对集
+create table 表名 (
+列声明 
+) charset utf8; [此处charset==服务器端charset]
+
+mysql的字符集设置非常灵活
+可以设置服务器默认字符集
+数据库默认字符集
+表默认字符集
+列默认字符集
+
+数据库默认字符集
+表默认字符集
+列字符集
+如果某一个级别没有指定字符集，则继承上一级
+
+以表声明utf8为例：
+存储的数据在表中，最终是utf8
+
+见day03劫图
+
+1)告诉服务器，我给你发送的数据是什么编码的？character_set_client
+2)告诉转换器，转换成什么编码？Character_set_connenction
+3)查询的结果用什么编码？Character_set_results
+
+如果以上3者都为字符集N,则可以简写set names N
+
+推论：什么时候将会乱码？
+1）client声明与事实不符
+2）results与客户端页面不符的时候
+
+什么时候将会丢失数据？
+Connection和服务器的字符集比client小时
+
+校对集：指字符集的排序规则
+一种字符集可以有一个或多个排序规则
+以utf8为例，我们默认使用的是utf8_general_ci规则，也可以使用其它规则
+
+如何声明校对集？
+create table()...Charset utf8 collate utf8_general_ci;
+
+注意：声明的校对集必须是字符集
+

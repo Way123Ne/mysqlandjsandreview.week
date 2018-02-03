@@ -1,0 +1,12 @@
+﻿		day07
+			2017/6/16
+Fri:视频学习
+part1:mysql
+*before和after的区别
+
+part2:javascript
+*JS_全局和局部变量
+*JS_常见对象-Object
+
+part3:review
+*Week20

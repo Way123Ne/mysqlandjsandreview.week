@@ -1,0 +1,11 @@
+﻿		day06
+			2017/6/15
+Thu:视频学习
+part1:mysql
+*触发器语法
+
+part2:javascript
+*JS函数_细节2
+*JS函数_动态函数
+*JS函数_匿名函数)
+

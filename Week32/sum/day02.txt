@@ -1,0 +1,12 @@
+﻿		day02
+			2017/6/11
+Sun:视频学习
+part1:mysql
+*视图
+
+part2:review
+*Week16
+
+part3:javascript
+*JS语句-if语句
+*JS语句-switch语句

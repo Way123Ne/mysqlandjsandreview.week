@@ -1,0 +1,14 @@
+﻿		Day01
+			207/5/22
+Mon:视频学习
+part1:传智播客刘道成 MySQL数据库视频教程
+*mysql 第01讲 数据库概念
+*mysql 第02讲 mysql安装及入门语句
+
+part2:Review Java&Android
+*Week1
+
+
+part2:review 
+*Week1
+*Week2(day01-day05)

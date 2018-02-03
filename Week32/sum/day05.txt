@@ -1,0 +1,10 @@
+﻿		day05
+			2017/6/14
+Wed:视频学习
+part1:review
+*Week19
+
+part2:javascript
+*JS_数组
+*JS_函数
+*JS_函数_细节1

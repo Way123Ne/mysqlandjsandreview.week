@@ -1,0 +1,40 @@
+﻿create table boy (
+name char(5),
+flower char(8)
+) charset utf8;
+insert into boy
+values
+('wayne','meigui'),
+('kayla','mudan'),
+('david','xiaocao');
+
+create table girl (
+name char(5),
+flower char(8)
+) charset utf8;
+
+insert into girl
+values
+('tony','meigui'),
+('tom','mudan'),
+('ellis','xiaocao'),
+('leroy','xiaocao');
+
+select boy.* ,girl.*
+from
+boy left join girl
+on boy.flower = girl.flower;
+
+ select boy.* ,girl.*
+ from
+ boy right join girl
+ on boy.flower = girl.flower;
+ 
+ insert into girl
+ values
+ ('Lee','yehua');
+ 
+ select boy.*,girl.*
+ from
+ boy inner join girl
+ on boy.flower = girl.flower;

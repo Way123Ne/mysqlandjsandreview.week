@@ -1,0 +1,13 @@
+﻿alter table class add age2 tinyint unsigned;
+
+insert into class
+(name,age,age2)
+values
+('lisi',25,0);
+
+insert into class
+(name,age,age2)
+values
+('lisi',25,255);
+
+alter table class add age3 tinyint(1)

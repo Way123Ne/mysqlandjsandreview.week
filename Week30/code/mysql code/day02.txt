@@ -1,0 +1,9 @@
+﻿ create table php528 (
+ id int primary key auto_increment,
+ name char(8) not null default '',
+ age tinyint unsigned not null default 0,
+ email varchar(30) not null default '',
+ tel char(11) not null default '',
+ salary decimal(7,2) not null default '1800.68',
+ riqi date not null default '2012-05-28'
+ )charset utf8;

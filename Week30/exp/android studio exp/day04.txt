@@ -1,0 +1,14 @@
+﻿ android studio安装&使用问题：
+
+1>Faile to resolve:junit:4.12?
+参见：http://blog.csdn.net/qq_29266921/article/details/50498291
+
+2〉Android Nougat requires the IDE to be running with Java 1.8 or later Install a supported JDK？
+参见：http://blog.csdn.net/shanyu1198124123/article/details/52419717
+
+3〉安装多个版本的jdk的话,Java -version和javac -version的版本不一致？
+参见：http://www.cnblogs.com/xiezhidong/p/6044912.html
+
+4〉Android Studio导入项目卡在Building gradle project info的解决方法？
+参见：http://www.jianshu.com/p/1311562bbfd4
+      https://my.oschina.net/moziqi/blog/547080

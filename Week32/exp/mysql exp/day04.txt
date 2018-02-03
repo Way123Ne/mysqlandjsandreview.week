@@ -1,0 +1,72 @@
+﻿ 阶段总结(三)
+
+union的用法
+合并查询的结果(取select结果的并集),
+对于重复的行，去掉
+如果不去重复，可以用union all
+
+union的要求：
+各select查出的列数一致
+
+如果子句中用了order by limit,
+那么子句要用"()"包起来
+
+左连接，右连接，内连接
+select table.列,table.列 from
+table left/right/inner join table
+on table.列 = table.列
+
+where....
+
+左连接与右连接可以相互转化
+a left b == b right join a
+
+内连接:inner join
+左右连接的交集
+两张表能相互匹配上的行
+
+表的管理->列的增删改
+define('列声明',列名称 列类型 [列属性] [默认值]);
+
+给表增加列
+alter table 表名 add 列声明 [after 列名/first]
+
+修改表的列
+alter table 表名 change 待修改的列名
+
+删除表的列
+alter table 表名 drop 列名
+
+
+视图：view
+视图是一张虚拟的表
+没有真实的数据存在，只是与表的一种查询产生的关系
+
+语法：
+create [algorithm=merge|temptable|undefined] view viewName as select ....;
+merge:
+视图<--sql1,where id>1000;
+查视图<--sql2,where id<2000
+
+形成sql: where id>1000 and id<2000 --查询-->基表
+
+temptable:
+视图<--sql1,where id>1000;
+查视图<--sql2,where id<2000;
+sql2-->[临时表]<--sql1<--基表
+
+
+
+字符集与校对集：
+客户端--->[转换器]--->[服务器]
+客户端<---
+
+客户端使用的字符集：set character_set_client = gbk/utf8
+转换器转换后的字符集：set character_set_connection = gbk/utf8
+返回给客户端的字符集;set character_set_results = gbk/utf8
+
+如果以上３者都是字符集N,可以简化为set names N;
+
+校对集：就是排序的规则
+
+一种字符集对应着一种或多种校对集

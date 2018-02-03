@@ -1,0 +1,41 @@
+﻿		Day01
+			2017/5/22
+Mon:视频学习
+Part:Mysql
+*如果你的电脑里装过MySQL，想再重新安装MySQL的时候可能就会
+ 因为前一版本卸载不彻底而出现错误。最常见的就是安装好后设  
+ 置参数的最后一步验证时，会在Execute configurattion步骤中
+ 的第三项Start Service出错,错误提示为Could not start the 
+ service MySQL，或者是第四项apply security setting的时候出错。
+ 
+ 
+彻底卸载Mysql的方法：
+    首先，先在服务（开始——>控制面板——>管理工具——>服务）
+ 里停掉MySQL的服务。打开控制面板-添加删除程序，找到MySQL，卸载。
+  
+
+ 把安装好的MYSQL卸载了，但这对于卸载MySQL来说这只是一半，
+ 还有重要的另一半是要清理注册表。
+开始-运行里面输入regedt，打开注册表，
+ 
+找到关于MYSQL的项把他们都删除，要一个项一个项的查找把他们都删除，
+ 这样在安装的时候就可以了。其实注册表里MySQL的项就是这三项：
+ 
+HKEY_LOCAL_MACHINE/SYSTEM/ControlSet001/Services/Eventlog/Application/MySQL
+ 
+HKEY_LOCAL_MACHINE/SYSTEM/ControlSet002/Services/Eventlog/Application/MySQL
+
+ HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/Eventlog/Application/MySQL
+ 
+
+ 这样，把上面的三项删除了之后，MySQL就基本卸载完全了。如果你还不放心的话，
+ 可以在C盘查找mysql，把相关的项都删除。
+
+
+注意:
+ 请看下面……
+有可能你找不到注册表的第三项，我的就是这种情况，我在注册表里搜索mysql,
+ 把所有关于mysql的动给删除了，可是还是不行。在安装的时候我想起有一个信息是，
+ 把mysql的信息存在了一个叫C:\ProgramData\的文件夹里了（我的是win7系统），
+ 但是没有发现有这个文件夹，于是怀疑它隐藏了，通过设置，让隐藏文件夹可见，
+ 我找打了这个文件，打开果然里面有Mysql的文件夹，于是把他删除，在安装，成功了！

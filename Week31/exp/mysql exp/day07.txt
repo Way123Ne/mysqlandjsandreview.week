@@ -1,0 +1,42 @@
+﻿集合 set
+集合的特性：无序性，唯一性
+
+一张表，就是一个集合，一行数据是集合的一个元素
+理论上讲：不可能存在完全相同的两个行，但是表中可以有完全相同的两行
+因为 表内部有一个rowid
+
+
+集合相乘，迪卡尔积
+其实就是两个集合的完全组合
+
+问：设集合A有M个元素，M个元素各不相同
+设集合B，有N个元素，N个元素各不相同 
+
+A*B,得到的积，有M*N个元素，不可能重复
+
+
+
+表A有9行，表B有10行
+两表相乘有9*10,90行
+
+
+
+左连接，右连接，内连接
+
+左连接：
+select 列1，列2，列N from
+tableA left join tableB
+On tableA.列 = tableB.列   [此处表连接成一张大表，完全当成普通表看]
+where group,having...照常写
+
+右连接：
+select 列1，列2，列N from
+tableA right join tableB
+On tableA.列 = tableB.列   [此处表连接成一张大表，完全当成普通表看]
+where group,having...照常写
+
+内连接
+select 列1，列2，列N from
+tableA inner join tableB
+On tableA.列 = tableB.列   [此处表连接成一张大表，完全当成普通表看]
+where group,having...照常写

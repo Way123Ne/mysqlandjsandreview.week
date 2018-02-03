@@ -1,0 +1,12 @@
+﻿		day05
+			2017/5/26
+Fri:视频学习
+part1:mysql
+*浮点列
+*字符型列
+
+part2:review
+*Week5
+
+part3:JavaScript
+*Javascript(概述和Java的区别)

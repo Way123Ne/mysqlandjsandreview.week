@@ -1,0 +1,12 @@
+﻿		day04
+			2017/5/30
+Tue:视频学习
+part1:安装
+*mysql workbench安装&初步使用
+*android studio安装*初步使用
+
+part2：review
+*Week9
+
+part3:javascript
+*JS语法-算术运算符

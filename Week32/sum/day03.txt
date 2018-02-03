@@ -1,0 +1,12 @@
+﻿		day03
+			2017/6/12
+Mon:视频学习
+part1:mysql
+*字符集与校对集
+
+part2:review
+*Week17
+
+part3:javascript
+*JS语句-循环语句
+*S语句-其他语句

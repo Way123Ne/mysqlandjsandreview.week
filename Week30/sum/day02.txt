@@ -1,0 +1,11 @@
+﻿		day02
+			2017/5/28
+Sun:视频学习
+part1:mysql
+*建表案例
+
+part2:review
+*Week7
+
+part3:JavaScript
+*Js和html相结合的方式一二

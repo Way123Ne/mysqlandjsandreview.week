@@ -1,0 +1,13 @@
+﻿四要素：
+监视地点
+监视事件 
+触发时间
+触发事件
+
+
+创建触发器的语法：
+Create trigger triggerName
+After/before insert/update/delete on 表名
+Begin
+Sql语句; //一句或多句,insert/update/delete范围内
+End;

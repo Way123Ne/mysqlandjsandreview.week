@@ -1,0 +1,15 @@
+﻿		day03
+			2017/6/5
+Mon:视频学习
+part1:mysql
+*select五种查询语句
+**order by 使用
+**limit使用
+
+*where型子查询
+*from型子查询
+*exist型子查询
+
+part2:review
+*Week11
+

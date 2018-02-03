@@ -1,0 +1,10 @@
+﻿create table class (
+id int primary key auto_increment,
+name varchar(10),
+age tinyint
+) charset utf8;
+
+insert into class
+(name,age)
+values
+('zhangsan',-127);

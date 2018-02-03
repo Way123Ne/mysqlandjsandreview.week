@@ -1,0 +1,6 @@
+﻿create table goods (
+name varchar(10) not null default '',
+price float(6,2) not null default 0.00
+)charset utf8;
+
+alter table goods

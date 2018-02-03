@@ -1,0 +1,12 @@
+﻿		day03
+			2017/5/29
+Mon:视频学习
+part1:mysql
+*增删改语法详解
+
+part2:review
+*Week8
+
+part3:JavaScript
+*语法的通用体现
+*语法-变量

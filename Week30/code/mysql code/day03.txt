@@ -1,0 +1,25 @@
+﻿insert into php528
+(name,age,email,tel,riqi)
+values
+('Mr Liu',88,'liubei@shu.com','13800084579','2017-5-29');
+
+insert into php528
+
+values
+(2,'Mr guan',68,'guanyu@wei.com','13900045678','1234.56','2018-5-29');
+
+insert into php528
+(name,age,tel)
+values
+('Mr zhang',56,'11978945612'),
+('Mr zhao',47,'13878912345'),
+('Mr huang',78,'18745612365'),
+('Mr ma',99,'13032145698');
+
+update php528
+set
+email = 'machao@xiliang.com',
+salary = 4215
+where id = 6;
+
+delete from php528 where id = 2;

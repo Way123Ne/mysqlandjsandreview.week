@@ -1,0 +1,9 @@
+﻿		day02
+			2017/5/23
+Tue:视频学习
+part1:mysql
+*增删改查语句介绍
+
+part2:Review
+*Week2
+*Week3(01-02)

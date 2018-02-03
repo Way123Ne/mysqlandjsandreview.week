@@ -1,0 +1,69 @@
+﻿视图：view
+
+查询每个栏目最贵的商品---〉
+select goods_id,goods_name,shop_price from goods
+order by cat_id asc,shop_price desc
+将查询结果 当成一张表来看
+
+如果某个查询结果出现的非常频繁，也就是拿这个结果
+进行字查询的次数非常频繁
+
+视图的定义：
+视图是由查询结果形成的一张虚拟表
+
+视图的创建语法:
+Create view 视图名 select 语句；
+
+视图的删除语法：
+Drop view
+
+为什么需要使用视图？
+1）可以简化查询
+2）可以进行权限控制
+   把表的权限封闭，但是开放相应的视图权限，
+   视图里只开放部分数据
+3）大数据分表时可以用到[作为了解]--〉分散方法：id取模计算
+eg:表的行数超过200万行时，就会变慢
+   可以把一张表的数据拆成4张表来存放
+   News表
+   Newsid,1,2,3,4
+   News1,news2,news3,news4表
+
+视图的修改：
+Alter view as select xxxxx
+
+视图与表的关系 
+视图是表的查询结果，自然表的数据改变了，影响视图的结果
+
+视图改变了呢？
+1）视图增删改也会影响表
+2）但是，视图并不是总是能增删改的
+
+答：试图的数据与表的数据  -->一一对应时可以修改
+    对于视图insert还应注意：
+    视图必须包含表中没有默认值的列
+
+视图的algorithm :
+Algorithm = merge/temptable/undefined
+
+Merge:当引用视图时，引用视图的语句与定义视图的语句合并
+Temptable:当引用视图时，根据视图的创建语句建立一个临时表
+Undefined:未定义，自动，让系统帮你选
+
+Merge:意味着视图只是一个规则，语句规则，当查询视图时
+      把查询视图的语句(比如where那些)与创建时的语句
+      where字句等合并/分析,形成一条select语句
+eg:创建视图的语句：
+	create view expensive as select id,name,salary from php528 where id > 2;
+   查询视图的语句：
+	select id,name,salary from expensive where salary < 4000;
+
+Temptable是根据创建语句瞬间创建一张临时表，
+	 然后查询视图的语句从该临时表查数据
+eg:创建视图的语句：	
+	create algorithm = temptable view pianyi as select id,name,salary from 
+	expensive order by salary desc;
+    查询视图的语句：
+	select * from pianyi;
+   
+

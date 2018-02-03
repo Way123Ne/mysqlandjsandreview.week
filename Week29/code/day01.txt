@@ -1,0 +1,20 @@
+create table class (
+stu int,
+name varchar(20),
+age int,
+area varchar(20)
+);
+
+create table score (
+stu int,
+name varchar(20),
+subject varchar(10),
+score int
+);
+
+create table msg (
+id int,
+title varchar(60),
+name varchar(10),
+content varchar(1000)
+);

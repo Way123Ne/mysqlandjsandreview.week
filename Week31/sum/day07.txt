@@ -1,0 +1,8 @@
+﻿		day07
+			2017/6/9
+Fri:视频学习
+part1:mysql
+*连接查询概念与左连接语法
+
+part2:review
+*Week13

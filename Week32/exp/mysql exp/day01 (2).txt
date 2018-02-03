@@ -1,0 +1,25 @@
+﻿回顾建表语句
+create table 表名 (
+列名称 列类型 [列属性][默认值],--->列声明
+列名称 列类型 [列属性][默认值],
+列名称 列类型 [列属性][默认值]
+)charset = utf8/gbk/...
+
+表增加列，修改列，删除列
+
+
+增加列：
+Alter table 表名 add 列声明
+增加的列默认是在表的最后一列
+
+可以用after来声明新增的列在哪一列的后面
+Alter table 表名 add 列声明 after 某一已存在的列名
+
+如果新增的列想放在最前面该怎么做？
+Alter table 表名 add 列声明 first
+
+修改列：
+Alter table 表名 change 被修改的列名 列声明
+
+删除列：
+Alter table 表名 drop 列名；

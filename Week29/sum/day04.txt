@@ -1,0 +1,8 @@
+﻿	day04
+		207/5/25
+Thu:视频学习
+part1:mysql 
+*整型列的可选属性
+
+part2:Review
+*Week4

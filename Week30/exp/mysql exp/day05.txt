@@ -1,0 +1,64 @@
+﻿		阶段(一)小结
+1.列类型的概念：
+1〉数值型
+	整型 tinyint(1字节),smallint(2),mediumint(3),int(4),bigint(8)
+	    整型的unsigned->无符号，zerofill->零填充，M->宽度
+	浮点型/定点型
+	    float(M,d) unsigned, M->精度，即总位数，d->小数位
+	    decimal比float更精确
+2〉浮点型
+	char(M) 定长，可存储的字符数,M<=255k
+	varchar(M) 变长,可存储的字节数,M<=65535(不同编码存取的字节数不同)
+	
+	char与varchar的不同点：
+	char(M):实际占M个字符，不够M个，右侧补空格，取出时，去除右侧空格
+	varchar(M):有1-2个字节来标记真实的长度
+3〉日期时间型 
+	year 1901-2155,如果输2位'00-69'之间+2000,'70-99'+1900(1970年计算机元年)
+	date YYYY-MM-DD,范围在1000-01-01->9999-12-31
+	time HH:ii:ss,范围在-838:59:59->838:59:59
+	datetime YY-MM-DD HH:ii:ss 1000-01-01 00:00:00->9999-12-31 23:59:59
+
+注意：开发中的一个问题-精确到秒的时间表示方式，不是用datetime,而是用int
+      来表示一个时间戳
+      用时间戳方便计算，并且方便格式化成不同的显示样式
+
+2.建表语句
+create table 表明 (
+列名称 列类型 [列属性] [默认值],
+...
+)engine 引擎名 charset 字符集;
+
+1>增:insert
+答：往哪张表增，增哪几列，各为什么值？
+insert into 表名
+(列1,列2...列N)
+values
+(值1,值2...值N);
+
+** 如果不声明插入的列，则默认插入所有列
+
+2〉改:update
+答：修改哪张表，修改哪几列，修改成什么值?
+在哪几行上生效？
+update 表名
+set 
+列1 = 值1,
+列2 = 值2,
+...
+列N = 值N
+
+where 表达式; //eg:where id = 2;
+
+3>删:delete
+答：删除哪张表的数据，删哪些行？
+delete from 表名
+where 表达式；
+
+4〉查:select
+select * from 表名 where 表达式；
+
+查询的5种子句：where,group,having,order by,limit
+
+
+

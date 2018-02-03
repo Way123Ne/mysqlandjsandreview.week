@@ -1,0 +1,10 @@
+﻿		day06
+			2017/6/1
+Thu:视频学习
+part1:mysql
+*select五种查询子句
+1〉where详解
+2〉group详解
+3〉having详解
+4〉order by详解
+

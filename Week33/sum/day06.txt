@@ -1,0 +1,9 @@
+﻿		day06
+			2017/6/22
+Thu:视频学习
+part1:mysql
+*索引概念
+*全文索引与停止词
+
+part2:review
+*Week25&26
